@@ -1,0 +1,106 @@
+# Reading D:/questasim64_10.6c/tcl/vsim/pref.tcl
+# //  Questa Sim-64
+# //  Version 10.6c win64 Jul 26 2017
+# //
+# //  Copyright 1991-2017 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# do sim.do
+# D:/questasim64_10.6c/uvm-1.2/win64
+# D:/questasim64_10.6c/verilog_src/uvm-1.1d
+# I:/My_program/uvm/uvm_code
+# if [file exists uvm_work] {  
+#   vdel -lib uvm_work -all  
+# } 
+# 
+# 
+#set}ä¾nå\îU
+# vlib uvm_work  
+# 
+# 
+# vmap work uvm_work
+# QuestaSim-64 vmap 10.6c Lib Mapping Utility 2017.07 Jul 26 2017
+# vmap work uvm_work 
+# Modifying modelsim.ini
+# 
+# 
+# vlog  +incdir+$UVM_HOME/src -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF   $UVM_HOME/src/uvm_pkg.sv  $WORK_HOME/dut.sv  $WORK_HOME/top_tb.sv
+# QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+# Start time: 18:39:55 on Jun 25,2024
+# vlog -reportprogress 300 "+incdir+D:/questasim64_10.6c/verilog_src/uvm-1.1d/src" -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF D:/questasim64_10.6c/verilog_src/uvm-1.1d/src/uvm_pkg.sv I:/My_program/uvm/uvm_code/dut.sv I:/My_program/uvm/uvm_code/top_tb.sv 
+# -- Compiling package uvm_pkg (uvm-1.1d Built-in)
+# -- Compiling module dut
+# -- Compiling package top_tb_sv_unit
+# -- Importing package uvm_pkg (uvm-1.1d Built-in)
+# -- Compiling interface my_if
+# -- Compiling module top_tb
+# 
+# Top level modules:
+# 	top_tb
+# End time: 18:39:59 on Jun 25,2024, Elapsed time: 0:00:04
+# Errors: 0, Warnings: 0
+# 
+# vsim  -novopt  -c -sv_lib $UVM_DPI_HOME/uvm_dpi work.top_tb
+# vsim -novopt -c -sv_lib D:/questasim64_10.6c/uvm-1.2/win64/uvm_dpi work.top_tb 
+# Start time: 18:39:59 on Jun 25,2024
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing I:/My_program/uvm/uvm_code/work/uvm_work.top_tb
+# Refreshing I:/My_program/uvm/uvm_code/work/uvm_work.top_tb_sv_unit
+# Refreshing I:/My_program/uvm/uvm_code/work/uvm_work.uvm_pkg
+# Loading sv_std.std
+# Loading work.uvm_pkg
+# Loading work.top_tb_sv_unit
+# ** Note: (vsim-8785) UVM-aware debugging capabilities will be disabled since no compiled "questa_uvm_pkg" can be found.
+# This also means that later if you turn on UVM-aware debugging your debug simulations may have
+# different random seeds from your non-debug simulations.
+# Loading work.top_tb
+# Refreshing I:/My_program/uvm/uvm_code/work/uvm_work.my_if
+# Loading work.my_if
+# Refreshing I:/My_program/uvm/uvm_code/work/uvm_work.dut
+# Loading work.dut
+# Loading D:/questasim64_10.6c/uvm-1.2/win64/uvm_dpi.dll
+# 
+# 
+# radix unsigned
+# unsigned
+# 
+# add log -r /*
+# 
+# run 6000ns
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO @ 0: reporter [RNTST] Running test my_case1...
+# UVM_INFO I:\My_program\uvm\uvm_code\my_driver.sv(13) @ 0: uvm_test_top.env.i_agt.drv [my_driver] new is called
+# UVM_INFO I:\My_program\uvm\uvm_code\my_driver.sv(20) @ 0: uvm_test_top.env.i_agt.drv [my_driver] build_phase is called
+# UVM_INFO I:\My_program\uvm\uvm_code\my_driver.sv(88) @ 1100000: uvm_test_top.env.i_agt.drv [my_driver] begin to drive one pkt
+# UVM_INFO I:\My_program\uvm\uvm_code\my_monitor.sv(85) @ 2100000: uvm_test_top.env.i_agt.mon [my_monitor] begin to collect one pkt
+# UVM_INFO I:\My_program\uvm\uvm_code\my_monitor.sv(85) @ 2300000: uvm_test_top.env.o_agt.mon [my_monitor] begin to collect one pkt
+# 
+# End time: 18:40:20 on Jun 25,2024, Elapsed time: 0:00:21
+# Errors: 0, Warnings: 1
